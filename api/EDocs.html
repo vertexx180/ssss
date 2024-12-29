@@ -1,0 +1,669 @@
+<html>
+    <head>
+	<title>Electron Documentation</title>
+	    <meta name="description" content="Documentation of Electron">
+    <meta name="keywords" content="roblox, exploit, rice, green, electron">
+        <style>
+            body
+            {
+                background-color: rgb(30, 30, 30);
+                color: rgb(200, 200, 200);
+                font-family:'Consolas';
+            }
+
+            .center {
+                margin: auto;
+                width: 50%;
+                border: 3px solid green;
+                padding: 10px;
+            }
+
+            a.title
+            {
+                font-size:24;
+                text-align:center;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            a.type
+            {
+                color: rgb(100, 200, 255);
+                font-family:'Consolas';
+                font:bold;
+            }
+
+            a.string
+            {
+                color: rgb(255, 160, 122);
+                font-family:'Consolas';
+            }
+
+            a.normal
+            {
+                font-family:'Segoe UI';
+            }
+        </style>
+    </head>
+
+    <body>
+        <a class="title">The Best Scripts:</a>
+        <br>
+        <br>
+        <a class="type">PETS GO OP AUTOFARM</a> 
+        <br>
+        <a class="normal"></a>loadstring(game:HttpGet("https://raw.githubusercontent.com/HerrSimoNHub/petsgoautofarm/refs/heads/main/Script.lua"))()
+        <br>
+        <br>
+        <a class="type">Pet Simulator 99</a> 
+		<br>
+        <a class="normal">loadstring(game:HttpGet("https://raw.githubusercontent.com/HerrSimoNHub/PS99FARM/main/Script.lua"))()
+        <br>
+        <br>
+        <a class="type">Toilet Tower Defense</a> 
+        <br>
+        <a class="normal">loadstring(game:HttpGet("https://raw.githubusercontent.com/HerrSimoNHub/ToiletAutoFarm/main/Script.lua"))()
+        <br>
+        <br>
+        <a class="type">Blox Fruits</a> 
+        <br>
+        <a class="normal"></a>loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999"))()
+        <br>
+        <br>
+        <a class="type">Blade Ball</a> 
+        <br>
+        <a class="normal"></a>loadstring(game:HttpGet("https://code4zaa.xyz/script/script-loader.lua"))()
+        <br>
+        <br>
+        <a class="type">Dungeon Quest! RPG Adventure</a> 
+        <br>
+        <a class="normal"></a>loadstring(game:HttpGet("https://raw.githubusercontent.com/AyoReaper/Reaper-Hub/main/loader.lua"))()
+        <br>
+        <br>
+        <a class="type">Arsenal</a>
+        <br>
+        <a class="normal"></a>loadstring(game:HttpGet("https://raw.githubusercontent.com/laeraz/midnightcc/main/public.lua"))()
+        <br>
+        <br>
+        <a class="type">Gym League</a>
+        <br>
+        <a class="normal"></a>loadstring(game:HttpGet("https://raw.githubusercontent.com/x64communist/tupo/main/GymLeague.lua"))()
+        <br>
+        <br>
+        <a class="type">Murder Mystery 2</a> 
+        <br>
+        <a class="normal"></a>loadstring(game:HttpGet('https://raw.githubusercontent.com/Roman34296589/SnapSanix-GUI-MM2/main/SnapSanix%20GUI%20mm2.lua'))()
+        <br>
+        <br>
+        <a class="type">Sukuna Battlegrounds</a> 
+        <br>
+        <a class="normal"></a>loadstring(game:HttpGet("https://raw.githubusercontent.com/ADSKerOffical/SukunaBattlegrounds/main/Battlegrounds"))()
+        <br>
+        <br>
+        <a class="type">Zombie Attack</a>
+        <br>
+        <a class="normal"></a>loadstring(game:HttpGet('https://raw.githubusercontent.com/EclipseHub/Eclipse/main/Eclipse.lua'))()
+        <br>
+        <br>
+        <a class="type">Planet Destroyers</a> 
+        <br>
+        <a class="normal"></a>loadstring(game:HttpGet("https://raw.githubusercontent.com/KrzysztofHub/script/main/loader.lua"))()
+        <br>
+        <br>
+        <a class="type">Weapon Crafting Simulator</a> 
+        <br>
+        <a class="normal"></a>loadstring(game:HttpGet("https://raw.githubusercontent.com/Imalwibest/Imalwibest/main/wynerdV2.lua",true))()
+        <br>
+        <br>
+        <a class="type">Gojo Vs Toji Ability Test</a> 
+        <br>
+        <a class="normal"></a>loadstring(game:HttpGet("https://raw.githubusercontent.com/Wolfdmitrich/gojovstoji/main/main.lua"))()
+        <br>
+        <br>
+        <br>
+        <a class="title">Documentation of Electron:</a>  
+        <br>
+        <br>
+        <a class="type">string</a> decompile(<a class="type">LocalScript/ModuleScript</a>)
+        <br>
+        <a class="normal">- Decompile a given LocalScript/ModuleScript and return the decompiled output</a>
+        
+        <br>
+        <br>
+		
+        <a class="type">bool</a> IsElectron
+        <br>
+        <a class="normal">- Check if Electron is loaded</a>
+        
+        <br>
+        <br>
+        
+        <a class="type">void</a> createconsole(<a class="string">title</a>)
+        <br>
+        <a class="normal">- Creates new console with <a class="string">title</a>
+        
+        <br>
+        <br>
+		
+		<a class="type">void</a> closeconsole(<a class="type">void</a>)
+        <br>
+        <a class="normal">- Closes current console</a>
+
+        <br>
+        <br>
+		
+        
+        <a class="type">bool</a> checkcaller(<a class="type">void</a>)
+        <br>
+        <a class="normal">- Return true if current thread was not called from game script</a>
+
+        <br>
+        <br> 
+		
+		
+		<a class="type">string</a> getscripthash(<a class="type">LocalScript/ModuleScript</a>)
+        <br>
+        <a class="normal">- Return bytecode hashed with SHA384, You can use this function to check if LocalScript/ModuleScript is changed</a>
+
+        <br>
+        <br>
+		
+
+		<a class="type">table</a> getgenv(<a class="type">void</a>)
+        <br>
+        <a class="normal">- Returns global environment in a table</a>
+
+        <br>
+        <br>
+        
+        <a class="type">table</a> getrenv(<a class="type">void</a>)
+        <br>
+        <a class="normal">- Returns Roblox's environment in a table</a>
+
+        <br>
+        <br>
+		
+		<a class="type">table</a> getreg(<a class="type">void</a>)
+        <br>
+        <a class="normal">- Returns Roblox's lua registry in a table</a>
+
+        <br>
+        <br>
+		
+		<a class="type">table</a> getgc(<a class="type">bool</a>)
+        <br>
+        <a class="normal">- Returns Roblox's gc functions/table in a table</a>
+
+        <br>
+        <br>
+		
+		<a class="type">table</a> getallgc(<a class="type">void</a>)
+        <br>
+        <a class="normal">- Returns Roblox's gc objects in a table</a>
+
+        <br>
+        <br>
+
+
+        <a class="type">table</a> getflags(<a class="type">void</a>)
+        <br>
+        <a class="normal">- Returns loaded fflags in a table</a>
+
+        <br>
+        <br>
+        
+        
+        <a class="type">table</a> getsenv(<a class="string"> LocalScript/ModuleScript </a>)
+        <br>
+        <a class="normal">- Returns the script's environment in a table</a>
+
+        <br>
+        <br>
+        
+        <a class="type">string</a> getclipboard(<a class="type">void</a>)
+        <br>
+        <a class="normal">- Returns whatever is copied on the clipboard as a string</a>
+
+        <br>
+        <br>
+       
+        <a class="type">table</a> getrawmetatable(<a class="type">variant</a>)
+        <br>
+        <a class="normal">- Returns metatable of <a class="type">variant</a>, returns nil is there is no metatable
+
+        <br>
+        <br> 
+		
+		<a class="type">int</a> getthreadcontext(<a class="type">void</a>)
+        <br>
+        <a class="normal">- Return current thread identity</a>
+
+        <br>
+        <br>
+		
+	    <a class="type">table</a> getinstances(<a class="type">void</a>)
+        <br>
+        <a class="normal">- Return all instances in game and return table</a>
+
+        <br>
+        <br>
+		
+		<a class="type">variant</a> gethiddenproperty(<a class="type">Instance</a>, <a class="string">Property</a>)
+        <br>
+        <a class="normal">- Get hidden property</a>
+
+        <br>
+        <br>
+		
+		<a class="type">table</a> gethiddenproperties(<a class="type">Instance</a>)
+        <br>
+        <a class="normal">- Get all hidden properties from Instance and return table</a>
+
+        <br>
+        <br>
+
+ 
+        <a class="type">function</a> getscriptfunction(<a class="string"> LocalScript/ModuleScript </a>)
+        <br>
+        <a class="normal">- Returns registry function of the given script</a>
+
+        <br>
+        <br>
+        
+		<a class="type">table</a> getloadedmodules(<a class="type">void</a>)
+        <br>
+        <a class="normal">- Return loaded modules in table</a>
+
+        <br>
+        <br>
+		
+		<a class="type">userdata</a> getcallingscript(<a class="type">void</a>)
+        <br>
+        <a class="normal">- Return script from current thread, return nil if its from Electron</a>
+
+        <br>
+        <br>
+		
+        <a class="type">table</a> getnilinstances(<a class="type">void</a>)
+        <br>
+        <a class="normal">- Returns instances which the parent is nil</a>
+
+        <br>
+        <br>
+		
+		<a class="type">string</a> getnamecallmethod(<a class="type">void</a>)
+        <br>
+        <a class="normal">- Returns current namecall method name</a>
+
+        <br>
+        <br>
+     
+	    <a class="type">bool</a> isloadedmodule(<a class="type">ModuleScript</a>)
+        <br>
+        <a class="normal">- Check if the modulescript is already loaded or not</a>
+
+        <br>
+        <br>
+	 
+	 
+        <a class="type">bool</a> iscclosure(<a class="type">function</a>)
+        <br>
+        <a class="normal">- Returns whether or not a function is a C function</a>
+
+        <br>
+        <br>
+        
+        <a class="type">bool</a> islclosure(<a class="type">function</a>)
+        <br>
+        <a class="normal">- Returns whether or not a function is a Lua function</a>
+
+        <br>
+        <br>  
+		
+		<a class="type">bool</a> isreadonly(<a class="type">variant</a>)
+        <br>
+        <a class="normal">- Return variant readonly value</a>
+
+        <br>
+        <br>  
+		
+		<a class="type">bool</a> iselectronfunction(<a class="type">function</a>)
+        <br>
+        <a class="normal">- Check if function is from Electron</a>
+
+        <br>
+        <br>
+		
+		<a class="type">void</a> sethiddenproperty(<a class="type">Instance</a>, <a class="string">Property</a>, <a class="string">variant</a>)
+        <br>
+        <a class="normal">- Set hidden property</a>
+
+        <br>
+        <br>
+        
+		<a class="type">void</a> setrawmetatable(<a class="type">variant</a>, <a class="type">table</a>)
+        <br>
+        <a class="normal">- Set current variant metatable to argument</a>
+
+        <br>
+        <br>
+		
+		<a class="type">void</a> setnamecallmethod(<a class="type">string</a>)
+        <br>
+        <a class="normal">- Set current namecall method name</a>
+
+        <br>
+        <br>
+		
+        <a class="type">void</a> setreadonly(<a class="type">variant, bool</a>)
+        <br>
+        <a class="normal">- Set variant readonly value</a>
+
+        <br>
+        <br>
+		
+		<a class="type">void</a> setthreadcontext(<a class="type">int</a>)
+        <br>
+        <a class="normal">- Set current thread identity</a>
+
+        <br>
+        <br>
+		
+		<a class="type">void</a> setsimulationradius(<a class="type">int </a>SimulationRadius, <a class="type">int </a>MaxSimulationRadius?)
+        <br>
+        <a class="normal">- Set current thread identity</a>
+
+        <br>
+        <br>
+		
+		<a class="type">void</a> setscriptable(<a class="type">Instance</a>, <a class="string">Property Name</a>, <a class="type">bool </a> abletoindex?)
+        <br>
+        <a class="normal">- Set the instance's hidden property so it can be indexed</a>
+
+        <br>
+        <br>  
+
+        <a class="type">void</a> setclipboard(<a class="type"> ... </a>)
+        <br>
+        <a class="normal">- Sets clipboard data to all given arguments</a>
+
+        <br>
+        <br>  
+		
+		 <a class="type">bool</a> setfflag(<a class="string">FlagName</a>, <a class="string">Value</a>)
+        <br>
+        <a class="normal">- Set fflag to value and return true if exist</a>
+
+        <br>
+        <br> 
+		
+		<a class="type">function</a> newcclosure(<a class="type">function</a>)
+        <br>
+        <a class="normal">- Creates c closure that invoke function argument when gets called</a>
+
+        <br>
+        <br> 
+		
+		<a class="type">function</a> loadstring(<a class="string">script</a>, <a class="string">chunk?</a>)
+        <br>
+        <a class="normal">- Compile the script and return function</a>
+
+        <br>
+        <br>
+		
+		<a class="type">variant</a> require(<a class="type">ModuleScript</a>)
+        <br>
+        <a class="normal">- Returns the value from ModuleScript</a>
+
+        <br>
+        <br>
+		
+		<a class="type">void</a> fireclickdetector(<a class="type">ClickDetector</a>)
+        <br>
+        <a class="normal">- Fire's ClickDetector</a>
+
+        <br>
+        <br>
+        
+        <a class="type">void</a> firetouchinterest(<a class="type">Part</a> TargetTouch, <a class="type">Part</a> ToTouch, <a class="type">Number</a> Toggle)
+        <br>
+        <a class="normal">- Fire touched event on TargetTouch with ToTouch part, Toggle must be either 0 (fire) or 1 (unfire)</a>
+
+        <br>
+        <br>
+		
+
+
+       
+		
+		<a class="type">void</a> writeconsole(<a class="type"> ... </a>)
+        <br>
+        <a class="normal">- Writes <a class="type">...</a> to the current console
+
+        <br>
+        <br>
+		
+		
+        <a class="type">void</a> mousemoverel(<a class="type">int</a> x, <a class="type">int</a> y)
+        <br>
+        <a class="normal">- Moves mouse position to x and y</a>
+
+        <br>
+        <br>
+
+        <a class="type">void</a> keypress(<a class="type">int</a> keycode)
+        <br>
+        <a class="normal">- Presses virtual keycode: find codes <a href="https://docs.microsoft.com/en-us/windows/desktop/inputdev/virtual-key-codes">here</a>
+
+        <br>
+        <br>
+
+        <a class="type">void</a> keyrelease(<a class="type">int</a> keycode)
+        <br>
+        <a class="normal">- Releases keycode</a>
+
+        <br>
+        <br>
+		
+		<a class="type">string</a> lz4compress(<a class="type">string</a> input)
+        <br>
+        <a class="normal">- Compress the input with lz4 compression algorithm</a>
+
+        <br>
+        <br>
+		
+		<a class="type">string</a> lz4decompress(<a class="type">string</a> input)
+        <br>
+        <a class="normal">- Decompress the input with lz4 compression algorithm</a>
+
+        <br>
+        <br>
+		
+		<a class="type">string</a> base64encode(<a class="type">string</a> input)
+        <br>
+        <a class="normal">- Encode the string using base64 format</a>
+
+        <br>
+        <br>
+		
+		<a class="type">string</a> base64decode(<a class="type">string</a> input)
+        <br>
+        <a class="normal">- Decode the base64 input to normal string</a>
+
+        <br>
+        <br>
+		
+		<a class="title">File System:</a>  
+        <br>
+        <br>
+		
+		 <a class="type">void</a> appendfile(<a class="string">filename</a>, <a class="string">content</a>)
+        <br>
+        <a class="normal">- Append <a class="string">content</a> to <a class="string">filename</a> inside workspace folder
+
+        <br>
+        <br>
+		
+		 <a class="type">void</a> writefile(<a class="string">filename</a>, <a class="string">content</a>)
+        <br>
+        <a class="normal">- Writes <a class="string">content</a> to the workspace folder, named <a class="string">filename</a>
+
+        <br>
+        <br>
+
+        <a class="type">string</a> readfile(<a class="string">filename</a>)
+        <br>
+        <a class="normal">- Returns content of <a class="string">filename</a> from workspace folder
+
+        <br>
+        <br>
+		
+	    <a class="type">table</a> listfiles(<a class="string">path</a>)
+        <br>
+        <a class="normal">- Return a list of files from <a class="string">path</a> inside workspace folder
+
+        <br>
+        <br>
+		
+		 <a class="type">void</a> makefolder(<a class="string">foldername</a>)
+        <br>
+        <a class="normal">- Create <a class="string">foldername</a> inside workspace folder
+
+        <br>
+        <br>
+		
+		 <a class="type">bool</a> isfolder(<a class="string">foldername</a>)
+        <br>
+        <a class="normal">- Check if <a class="string">foldername</a> exist inside workspace folder
+
+        <br>
+        <br>
+		
+		 <a class="type">bool</a> isfile(<a class="string">filename</a>)
+        <br>
+        <a class="normal">- Check if <a class="string">filename</a> exist inside workspace folder
+
+        <br>
+        <br>
+		
+		<a class="type">bool</a> delfile(<a class="string">filename</a>)
+        <br>
+        <a class="normal">- Try delete <a class="string">filename</a> inside workspace folder, and return true if succeed
+
+        <br>
+        <br>
+		
+		<a class="type">bool</a> delfolder(<a class="string">foldername</a>)
+        <br>
+        <a class="normal">- Try delete <a class="string">foldername</a> inside workspace folder, and return true if succeed
+
+        <br>
+        <br>
+
+        
+		
+		
+		<a class="title">Debug Library:</a>  
+        <br>
+        <br>
+		
+		<a class="type">table</a> debug.getconstants(<a class="type">function</a>)
+        <br>
+        <a class="normal">- Returns constants from lua function</a>
+
+        <br>
+        <br> 
+		
+		<a class="type">variant</a> debug.getstack(<a class="type">level</a>, [optional]<a class="type"> idx</a>)
+        <br>
+        <a class="normal">- Return stack from level as table, if has idx it will return something</a>
+
+        <br>
+        <br> 
+		
+		<a class="type">table</a> debug.getmetatable(<a class="type">variant</a>)
+        <br>
+        <a class="normal">- Returns metatable from variant and without getting locked</a>
+
+        <br>
+        <br> 
+		
+		<a class="type">table</a> debug.getregistry(<a class="type">void</a>)
+        <br>
+        <a class="normal">- Return Roblox's lua registry table</a>
+
+        <br>
+        <br> 
+		
+		<a class="type">table</a> debug.getupvalues(<a class="type">function</a>)
+        <br>
+        <a class="normal">- Return function upvalues</a>
+
+        <br>
+        <br> 
+		
+		<a class="type">variant</a> debug.getupvalue(<a class="type">function</a>, <a class="type">int</a> index)
+        <br>
+        <a class="normal">- Return upvalue from upvalue index function</a>
+
+        <br>
+        <br> 
+		
+		<a class="type">table</a> debug.getprotos(<a class="type">function</a>)
+        <br>
+        <a class="normal">- Return functions/proto from function</a>
+
+        <br>
+        <br> 
+		
+		<a class="type">function</a> debug.getproto(<a class="type">function</a>, <a class="type">int</a> index, <a class="type">bool</a> SearchGC?)
+        <br>
+        <a class="normal">- Return functions/proto from index, If searchgc set to true it will search the proto instances in gc and it will return table!</a>
+
+        <br>
+        <br> 
+		
+		<a class="type">table</a> debug.getfenv(<a class="type">variant</a>)
+        <br>
+        <a class="normal">- Return variant environment</a>
+
+        <br>
+        <br> 
+		
+		<a class="type">table</a> debug.getinfo(<a class="type">function</a>)
+        <br>
+        <a class="normal">- Return info from function</a>
+
+        <br>
+        <br> 
+		
+		<a class="type">void</a> debug.setconstant(<a class="type">function</a>, <a class="type">int</a> index,  <a class="type">variant</a> value)
+        <br>
+        <a class="normal">- Set constant from constant index to value</a>
+
+        <br>
+        <br> 
+		
+		<a class="type">void</a> debug.setupvalue(<a class="type">function</a>, <a class="type">int</a> index,  <a class="type">variant</a> value)
+        <br>
+        <a class="normal">- Set upvalue from upvalue index to value</a>
+
+        <br>
+        <br> 
+		
+		<a class="type">bool</a> debug.setmetatable(<a class="type">variant</a>, <a class="type">table</a>)
+        <br>
+        <a class="normal">- Set variant metatable</a>
+
+        <br>
+        <br>
+
+        <a class="type">void</a> debug.setstack(<a class="type">level</a>, <a class="type">idx</a>, <a class="type">value</a>)
+        <br>
+        <a class="normal">- Set stack from level on idx to value</a>
+
+        <br>
+        <br> 		
+		
+    <script defer="" src="../beacon.min.js/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854" integrity="sha512-bjgnUKX4azu3dLTVtie9u6TKqgx29RBwfj3QXYt5EKfWM/9hPSAI/4qcV5NACjwAo8UtTeWefx6Zq5PHcMm7Tg==" data-cf-beacon='{"rayId":"7f0feeaf3c5b16e8","version":"2023.7.0","r":1,"b":1,"token":"8584076a77aae4c3aacd86c1399d435167a4cb99","si":100}' crossorigin="anonymous"></script>
+<script>(function(){var js = "window['__CF$cv$params']={r:'8177cfc3dbbe5b49',t:'MTY5NzUzODA1My45NDMwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body>
+</html>
