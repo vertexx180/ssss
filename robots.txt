@@ -1,5 +1,6 @@
 User-agent: *
-Allow: /index.html
+Allow: /
 Disallow: /private/
 Disallow: /secret-page/
 Disallow: /admin/
+Sitemap: https://electronv3.com/sitemap.xml
